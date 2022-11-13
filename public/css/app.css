@@ -1,0 +1,93 @@
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    color: red;
+    background: yellow;
+}
+nav {
+    background-color: #979595;
+    height: 50px;
+    width: 100%;
+}
+
+#search {
+    display: flex;
+    float: right;
+    width: 200px;
+    height: 25px;
+    border: 1px solid #979595;
+    border-radius: 7px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+#search::placeholder {
+    font-style: italic;
+}
+#briefs {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: aliceblue;
+}
+table {
+    font-family: "Nunito", sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td,
+th {
+    border: 1px solid #979595;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #fad6a5;
+}
+#add {
+    background-color: rgb(206, 0, 51);
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    float: right;
+    border-radius: 5px;
+    margin-right: 120px;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
