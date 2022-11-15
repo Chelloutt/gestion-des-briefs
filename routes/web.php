@@ -5,6 +5,7 @@ use App\Http\Controllers\BriefsController;
 use App\Http\Controllers\PromotionsController;
 use App\Http\Controllers\ApprenantsController;
 use App\Http\Controllers\TasksController;
+use App\Http\Controllers\AssingerController;
 use App\Models\breifs;
 use App\Models\task;
 
@@ -61,4 +62,10 @@ Route::get('/newtask', [TasksController::class , 'store']);
 Route::get('/updatetask/{id}', [TasksController::class , 'update']);
 Route::get('/edittask/{id}', [TasksController::class , 'edittask']);
 Route::get('/deletetask/{id}', [TasksController::class , 'delete']);
+
+// assinger routes
+
+Route::get('/assinger/{id}', [AssingerController::class, 'select']);
+Route::get("/assigner/{id}",[AssignController::class,'AssignBrief']);
+Route::get("/assigner/{id}",[AssignController::class,'DesAssignBrief']);
 
